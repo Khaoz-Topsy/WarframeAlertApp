@@ -1,7 +1,7 @@
 # WarframeAlertApp
 A simple Electron app running some Angular code to display a pretty interface showing the current Warframe Alerts
 
-###Install
+### Install
 WarframeAlertApp\Angular-src\shared\service\baseService.js
 change URL and Key
 URL can be set to test.khaoznet.xyz (for now)
