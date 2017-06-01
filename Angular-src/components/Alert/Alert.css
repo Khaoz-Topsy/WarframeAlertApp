@@ -1,0 +1,160 @@
+/*Panel Colors*/
+.panel-red {
+    border-color: #d9534f;
+    border: 1px solid #d9534f;
+}
+.panel-blue {
+    border-color: #1e90ff;
+    border: 1px solid #1e90ff;
+}
+.panel-green {
+    border-color: #5cb85c;
+    border: 1px solid #5cb85c;
+}
+.panel-yellow {
+    border-color: #C0B780;
+    border: 1px solid #C0B780;
+}
+
+.panel-noborder {
+    border-width: 0px;
+}
+
+/*Panel Headings*/
+.panel-red > .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+.panel-blue > .panel-heading {
+    border-color: #1e90ff;
+    color: #fff;
+    background-color: #1e90ff;
+}
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+.panel-yellow > .panel-heading {
+    border-color: #C0B780;
+    color: #fff;
+    background-color: #C0B780;
+}
+
+/*Panel Attribs*/
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.panel-body {
+    padding: 15px;
+}
+
+.MyImg {
+    margin-top: -7px;
+    max-height: 30px;
+}
+
+.myH1
+{
+    margin-top: -5px;
+    margin-bottom: 7px;
+}
+
+.noPadding
+{
+    padding: 0px 0px 0px 0px;
+}
+
+.myHeader
+{
+    height: 20px;
+}
+
+.innerDiv {
+    display: table;
+    margin: 0 auto; 
+}
+
+.imgSpace
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.glyphy-con
+{
+    height: 20px;
+    min-width: 20px;
+    width: 20px;
+    margin-left: 3px;
+}
+
+.largeText-black
+{
+    font-size: 1.4em;
+    color: black;
+}
+
+.smallText-black
+{
+    font-size: 0.7em;
+    color: black;
+}
+
+.largeText-white
+{
+    font-size: 1.4em;
+    color: white;
+}
+
+.smallText-white
+{
+    font-size: 0.7em;
+    color: white;
+}
+
+.largeText-gold
+{
+    font-size: 1.4em;
+    color: gold;
+}
+
+.largeText-orangered
+{
+    font-size: 1.4em;
+    color: orangered;
+}
+
+.largeText-green
+{
+    font-size: 1.4em;
+    color: lightgreen;
+}
+
+
+.text-black {
+    color:#000000;
+    margin-bottom: 0px;
+}
+
+/*End Of Panel*/
+.warframeAlertSize {
+    min-height: 50px;
+}

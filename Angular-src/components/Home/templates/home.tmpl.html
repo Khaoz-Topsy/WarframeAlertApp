@@ -1,0 +1,81 @@
+<div id="wrapper" style="padding-top: 0px;">
+    <div id="main" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 largeHeading">
+            <h1 style="margin-bottom: 20px;">Current Alerts</h1>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-show="$ctrl.alertLoading" align="Center"">
+            <img src="Angular-src/media/Loading/Ring/ring.gif" class="imgSpace">
+            <div style="background:url(Angular-src/media/Loading/Ring/ring.gif) no-repeat center center;width:32px;height:32px;"></div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-show="$ctrl.loadingFailed" align="Center">
+			<h3>There was a problem loading the Current Alerts, please check your internet connection.</h3>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noBorder" ng-hide="$ctrl.alertLoading">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align: center;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-repeat="alert in $ctrl.AlertsAndNonAlerts.Alerts">
+                    <div class="panel panel-red panel-noborder card-hover">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" align="Left">
+                                {{alert.Title}}
+                                <div class="floatRight"><img src="Angular-src/media/Images/Warframe/Alert.png" class="MyImg" alt="Alert">
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="panel-body minHeight50">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="margin-left:-12px" align="Left">
+                                <p class="text-black">
+                                    <small><strong class="text-black">Description: </strong></small>
+                                    {{alert.Description}}<br>
+                                    <small><strong class="text-black">Date Started: </strong></small>
+                                    {{alert.PubDate}}<br>
+                                    <small><strong class="text-black">Expiry: </strong></small>
+                                    {{alert.Expiry}}<br><br>
+                                    <small><strong class="text-black">Time Left: </strong></small>
+                                    <big><strong class="text-black"> {{alert.TimeLeft}}</strong></big>
+                                </p>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 display-block">
+                                <img ng-src="Angular-src/media/Images/Warframe/Dark/{{$ctrl.convertFaction(alert.Faction)}}.png" style="margin-top:30%; margin-left:3px" alt="Alert">
+                                <p class="text-black" style="margin-left:4px">{{$ctrl.convertFaction(alert.Faction)}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 textAlignCenter">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-repeat="nonAlert in $ctrl.AlertsAndNonAlerts.NonAlerts">
+                    <div class="panel {{$ctrl.getPanelColour(nonAlert.Author)}} panel-noborder card-hover">
+                        <div class="panel-heading" style="height: 43px;">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nonAlert-Title">
+                                <h3 class="panel-title" align="Left">
+                                    {{nonAlert.Title}}
+                                </h3>
+                            </div>
+                            <div style="display: inline; float:right; padding-top: 10px;">
+                                <img src="Angular-src/media/Images/Warframe/Dark/Corpus.png" 
+                                    ng-show="$ctrl.getFactionImages(nonAlert.Author)" class="MyImg" alt="Corpus">
+                                <img src="Angular-src/media/Images/Warframe/Dark/Grineer.png" 
+                                    ng-show="$ctrl.getFactionImages(nonAlert.Author)" class="MyImg" alt="Grineer">
+                                <img src="Angular-src/media/Images/Warframe/Dark/Outbreak.png"
+                                    ng-hide="$ctrl.getFactionImages(nonAlert.Author)" class="MyImg" alt="Outbreak">
+                            </div>
+                        </div>
+                        <div class="panel-body" style="min-height:50px;">
+                            <div align="Left">
+                                <p class="text-black">
+                                    <small><strong class="text-black">Date Started: </strong></small>
+                                    {{nonAlert.PubDate}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<br />

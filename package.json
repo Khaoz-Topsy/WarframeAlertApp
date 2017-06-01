@@ -1,0 +1,35 @@
+{
+  "name": "WarAlertsElectron",
+  "productName": "Warframe Alert app",
+  "version": "0.1.0",
+  "description": "A minimal Electron app for displaying the Current Warframe Alerts and Invasions",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/favicon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Warframe Alert app\"",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "repository": "TODO",
+  "keywords": [
+    "Electron",
+    "Warframe",
+    "Alerts",
+    "Invasions",
+    "Outbreaks"
+  ],
+  "author": "Khaoz-Topsy",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.6.10",
+    "electron-builder": "^5.35.0",
+    "electron-packager": "^8.7.0"
+  },
+  "build": {
+    "appId": "com.tennodex.electron",
+    "app-category-type": "public.app-category.productivity",
+    "win": {
+      "iconUrl": "http://test.khaoznet.xyz/Angular-src/media/favicon.ico"
+    }
+  }
+}

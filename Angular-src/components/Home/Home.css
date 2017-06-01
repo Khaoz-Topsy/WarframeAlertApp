@@ -1,0 +1,74 @@
+.card-hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-hover:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#header {
+  position: fixed !important;
+}
+
+
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #C0C0C0;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #242943;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #2A2F4A;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+
+#main .noBorder {
+	border-top: transparent;
+	border-right: transparent;
+	border-bottom: transparent;
+	border-left: transparent;
+}
+
+.largeHeading {
+	padding: 1em 4em 0em 4em; 
+	text-align: center;
+}
+
+.floatRight {
+	float:right;
+}
+
+.minHeight50 {
+	min-height:50px;
+}
+
+.display-block {
+	display:block;
+}
+
+.textAlignCenter {
+	text-align: center;
+}
+
+#main .nonAlert-Title {
+	height: 43px; 
+	padding-left: 0px; 
+	padding-right: 0px;
+}

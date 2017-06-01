@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Warframe Alerts App</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="Angular-src/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="Angular-src/assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="Angular-src/assets/css/ie8.css" /><![endif]-->
+		
+		<link href="Angular-src/media/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		
+		<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+		
+		<!-- Angular Section -->
+		<script rel="text/javascript" src="Angular-src/lib/angular.min.js" ></script>
+		<script rel="text/javascript" src="Angular-src/lib/angular-route.min.js"></script>
+		
+		<script src="Angular-src/app.js"></script>
+		
+		<!-- Components -->
+		<script rel="text/javascript" src="Angular-src/components/Menu/menu.js"></script>
+		<script rel="text/javascript" src="Angular-src/components/Menu/controllers/menuController.js"></script>
+		<script rel="text/javascript" src="Angular-src/components/Home/home.js"></script>
+		<script rel="text/javascript" src="Angular-src/components/Home/controllers/homeController.js"></script>
+
+		<!-- Services -->
+		<script src="Angular-src/shared/resourceManager.js"></script>
+		<script src="Angular-src/shared/service/baseService.js"></script>
+		<script src="Angular-src/shared/service/Warframe/warframeAlertService.js"></script>
+		
+		<!-- Loading Icon -->
+		<link rel="stylesheet" type="text/css" href="Angular-src/media/Loading/Ring/ring.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="Angular-src/components/Alert/Alert.css" />
+		<link rel="stylesheet" href="Angular-src/components/Home/Home.css" />
+		<link rel="stylesheet" href="Angular-src/views/404.css" />
+
+		<!-- Custom Bootstrap v3.7 -->
+		<link rel="stylesheet" href="Angular-src/lib/bootstrap/css/bootstrap.css" />
+	</head>
+	<body ng-app="TennoDex" ng-controller="MenuController as menu" style="background: #242943;">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt" style="background-color: #242943;">
+						<a href="#!/" class="logo nolink"><strong>Warframe</strong><span>{{menu.siteDescrip}}</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li ng-repeat="navItem in menu.navList"> <a href="{{navItem.link}}" style="text-decoration:line-through;">{{navItem.title}}</a> </li>
+						</ul>
+						<ul class="actions vertical">
+							<li><a href="#" class="button special fit" style="text-decoration:line-through;">Get Started</a></li>
+							<li><a href="#" class="button fit" style="text-decoration:line-through;">Log In</a></li>
+						</ul>
+					</nav>
+					
+					<div ng-view></div>
+
+				<!-- Footer -->
+					<footer id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon alt fa-facebook"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon alt fa-linkedin"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon alt fa-github"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon alt fa-steam"><span class="label">GitHub</span></a></li>
+								<li><a href="mailto:hi@kurtlourens.com" class="icon alt fa-envelope"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" data-wow-delay="0.8s" style="background: transparent; border-bottom: transparent;">
+									<img src="Angular-src/media/Logo/Red-Ruby-IT-Spin-Transparent.gif" alt="Red Ruby IT Spinning Logo" style="width:40px; margin-top: -5px;">
+								</li>
+							</ul>
+							<ul class="copyright">
+								<li>by KhaozTopsy</li><li>Visit: <a href="#">khaoznet.xyz</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="Angular-src/assets/js/jquery.min.js"></script>
+			<script src="Angular-src/assets/js/jquery.scrolly.min.js"></script>
+			<script src="Angular-src/assets/js/jquery.scrollex.min.js"></script>
+			<script src="Angular-src/assets/js/skel.min.js"></script>
+			<script src="Angular-src/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="Angular-src/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="Angular-src/assets/js/main.js"></script>
+			<script>if (window.module) module = window.module;</script>
+	</body>
+</html>

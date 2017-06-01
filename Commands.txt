@@ -1,0 +1,8 @@
+Delete these folders
+/dist
+/release-builds
+/node_modules
+/Output
+
+npm install
+npm run dist
