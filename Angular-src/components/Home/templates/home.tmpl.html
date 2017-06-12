@@ -4,7 +4,7 @@
             <h1 style="margin-bottom: 20px;">Current Alerts</h1>
         </div>
 
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-show="$ctrl.alertLoading" align="Center"">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-show="$ctrl.alertLoading" align="Center">
             <img src="Angular-src/media/Loading/Ring/ring.gif" class="imgSpace">
             <div style="background:url(Angular-src/media/Loading/Ring/ring.gif) no-repeat center center;width:32px;height:32px;"></div>
         </div>
@@ -18,7 +18,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-repeat="alert in $ctrl.AlertsAndNonAlerts.Alerts">
                     <div class="panel panel-red panel-noborder card-hover">
                         <div class="panel-heading">
-                            <h3 class="panel-title" align="Left">
+                            <h3 class="panel-title hideOverflow" style="white-space:nowrap; overflow:hidden;" align="Left">
                                 {{alert.Title}}
                                 <div class="floatRight"><img src="Angular-src/media/Images/Warframe/Alert.png" class="MyImg" alt="Alert">
                                 </div>
@@ -50,7 +50,7 @@
                     <div class="panel {{$ctrl.getPanelColour(nonAlert.Author)}} panel-noborder card-hover">
                         <div class="panel-heading" style="height: 43px;">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nonAlert-Title">
-                                <h3 class="panel-title" align="Left">
+                                <h3 class="panel-title hideOverflow" style="white-space:nowrap; overflow:hidden;" align="Left">
                                     {{nonAlert.Title}}
                                 </h3>
                             </div>

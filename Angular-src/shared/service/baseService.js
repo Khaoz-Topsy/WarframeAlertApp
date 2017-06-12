@@ -1,8 +1,8 @@
 angular.module('TennoDex.ResourceManager')
     .service('baseService', function ($http) {
         var $baseResource = this;
-        var URL = 'http://';
-		var Key = ''
+        var URL = 'http://tennodex.com';
+		var Key = '';
 
         $baseResource.getURL = function() {
 
@@ -21,7 +21,7 @@ angular.module('TennoDex.ResourceManager')
                 });
         };
 
-        $baseResource.apiKey = function ($ctrl) {
+        $baseResource.apiKey = function () {
             return Key;
         };
 

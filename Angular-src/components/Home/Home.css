@@ -72,3 +72,8 @@ body::-webkit-scrollbar-thumb
 	padding-left: 0px; 
 	padding-right: 0px;
 }
+
+.hideOverflow {
+    white-space:nowrap;
+    overflow:hidden;
+}
