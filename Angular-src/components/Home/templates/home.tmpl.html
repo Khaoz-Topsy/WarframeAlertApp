@@ -20,12 +20,12 @@
                         <div class="panel-heading">
                             <h3 class="panel-title hideOverflow" style="white-space:nowrap; overflow:hidden;" align="Left">
                                 {{alert.Title}}
-                                <div class="floatRight"><img src="Angular-src/media/Images/Warframe/Alert.png" class="MyImg" alt="Alert">
-                                </div>
+                                <!-- <div class="floatRight"><img src="Angular-src/media/Images/Warframe/Alert.png" class="MyImg" alt="Alert"> -->
+                                <!-- </div> -->
                             </h3>
                         </div>
                         <div class="panel-body minHeight50">
-                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="margin-left:-12px" align="Left">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="margin-left:-12px" align="Left">
                                 <p class="text-black">
                                     <small><strong class="text-black">Description: </strong></small>
                                     {{alert.Description}}<br>
@@ -37,8 +37,8 @@
                                     <big><strong class="text-black"> {{alert.TimeLeft}}</strong></big>
                                 </p>
                             </div>
-                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 display-block">
-                                <img ng-src="Angular-src/media/Images/Warframe/Dark/{{$ctrl.convertFaction(alert.Faction)}}.png" style="margin-top:30%; margin-left:3px" alt="Alert">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 display-block">
+                                <img ng-src="Angular-src/media/Images/Warframe/Dark/{{$ctrl.convertFaction(alert.Faction)}}.png" style="margin-top:20px; margin-left:3px" alt="Alert">
                                 <p class="text-black" style="margin-left:4px">{{$ctrl.convertFaction(alert.Faction)}}</p>
                             </div>
                         </div>

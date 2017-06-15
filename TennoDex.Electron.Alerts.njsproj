@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>TennoDex.Electron.Alerts</Name>
+    <RootNamespace>TennoDex.Electron.Alerts</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9dd4598e-85b9-491a-8a22-2b89438862b8</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Angular-src\app.js" />
+    <Compile Include="Angular-src\assets\js\ie\html5shiv.js" />
+    <Compile Include="Angular-src\assets\js\ie\respond.min.js" />
+    <Compile Include="Angular-src\assets\js\jquery.min.js" />
+    <Compile Include="Angular-src\assets\js\jquery.scrollex.min.js" />
+    <Compile Include="Angular-src\assets\js\jquery.scrolly.min.js" />
+    <Compile Include="Angular-src\assets\js\main.js" />
+    <Compile Include="Angular-src\assets\js\skel.min.js" />
+    <Compile Include="Angular-src\assets\js\util.js" />
+    <Compile Include="Angular-src\components\Home\controllers\homeController.js" />
+    <Compile Include="Angular-src\components\Home\home.js" />
+    <Compile Include="Angular-src\components\Menu\controllers\menuController.js" />
+    <Compile Include="Angular-src\components\Menu\menu.js" />
+    <Compile Include="Angular-src\lib\angular-fusioncharts.min.js" />
+    <Compile Include="Angular-src\lib\angular-route.min.js" />
+    <Compile Include="Angular-src\lib\angular.min.js" />
+    <Compile Include="Angular-src\shared\resourceManager.js" />
+    <Compile Include="Angular-src\shared\service\baseService.js" />
+    <Compile Include="Angular-src\shared\service\Warframe\warframeAlertService.js" />
+    <Compile Include="app.js" />
+    <Compile Include="lib\angular-fusioncharts.min.js" />
+    <Compile Include="lib\angular-route.min.js" />
+    <Compile Include="lib\angular.min.js" />
+    <Compile Include="main.js" />
+    <Compile Include="renderer.js" />
+    <Content Include=".gitignore" />
+    <Content Include="Angular-src\assets\css\font-awesome.min.css" />
+    <Content Include="Angular-src\assets\css\ie8.css" />
+    <Content Include="Angular-src\assets\css\ie9.css" />
+    <Content Include="Angular-src\assets\css\main.css" />
+    <Content Include="Angular-src\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Angular-src\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Angular-src\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Angular-src\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Angular-src\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Angular-src\assets\fonts\FontAwesome.otf" />
+    <Content Include="Angular-src\assets\js\ie\backgroundsize.min.htc" />
+    <Content Include="Angular-src\assets\sass\base\_page.scss" />
+    <Content Include="Angular-src\assets\sass\base\_typography.scss" />
+    <Content Include="Angular-src\assets\sass\components\_box.scss" />
+    <Content Include="Angular-src\assets\sass\components\_button.scss" />
+    <Content Include="Angular-src\assets\sass\components\_contact-method.scss" />
+    <Content Include="Angular-src\assets\sass\components\_form.scss" />
+    <Content Include="Angular-src\assets\sass\components\_icon.scss" />
+    <Content Include="Angular-src\assets\sass\components\_image.scss" />
+    <Content Include="Angular-src\assets\sass\components\_list.scss" />
+    <Content Include="Angular-src\assets\sass\components\_section.scss" />
+    <Content Include="Angular-src\assets\sass\components\_spotlights.scss" />
+    <Content Include="Angular-src\assets\sass\components\_table.scss" />
+    <Content Include="Angular-src\assets\sass\components\_tiles.scss" />
+    <Content Include="Angular-src\assets\sass\ie8.scss" />
+    <Content Include="Angular-src\assets\sass\ie9.scss" />
+    <Content Include="Angular-src\assets\sass\layout\_banner.scss" />
+    <Content Include="Angular-src\assets\sass\layout\_contact.scss" />
+    <Content Include="Angular-src\assets\sass\layout\_footer.scss" />
+    <Content Include="Angular-src\assets\sass\layout\_header.scss" />
+    <Content Include="Angular-src\assets\sass\layout\_main.scss" />
+    <Content Include="Angular-src\assets\sass\layout\_menu.scss" />
+    <Content Include="Angular-src\assets\sass\layout\_wrapper.scss" />
+    <Content Include="Angular-src\assets\sass\libs\_functions.scss" />
+    <Content Include="Angular-src\assets\sass\libs\_mixins.scss" />
+    <Content Include="Angular-src\assets\sass\libs\_skel.scss" />
+    <Content Include="Angular-src\assets\sass\libs\_vars.scss" />
+    <Content Include="Angular-src\assets\sass\main.scss" />
+    <Content Include="Angular-src\components\Alert\Alert.css" />
+    <Content Include="Angular-src\components\Home\Home.css" />
+    <Content Include="Angular-src\components\Home\templates\home.tmpl.html" />
+    <Content Include="Angular-src\components\Menu\templates\menu.tmpl.html" />
+    <Content Include="Angular-src\lib\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Angular-src\lib\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Angular-src\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="Angular-src\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Angular-src\LICENSE.txt" />
+    <Content Include="Angular-src\media\favicon.ico" />
+    <Content Include="Angular-src\media\Images\404\1.jpg" />
+    <Content Include="Angular-src\media\Images\404\2.jpg" />
+    <Content Include="Angular-src\media\Images\404\3.jpg" />
+    <Content Include="Angular-src\media\Images\Warframe\Alert.png" />
+    <Content Include="Angular-src\media\Images\Warframe\Dark\Corpus.png" />
+    <Content Include="Angular-src\media\Images\Warframe\Dark\Grineer.png" />
+    <Content Include="Angular-src\media\Images\Warframe\Dark\Infested.png" />
+    <Content Include="Angular-src\media\Images\Warframe\Dark\Orokin.png" />
+    <Content Include="Angular-src\media\Images\Warframe\Dark\Outbreak.png" />
+    <Content Include="Angular-src\media\Images\Warframe\Dark\Sentient.png" />
+    <Content Include="Angular-src\media\Loading\Ring\ring.css" />
+    <Content Include="Angular-src\media\Loading\Ring\ring.gif" />
+    <Content Include="Angular-src\media\Loading\Ring\ring.svg" />
+    <Content Include="Angular-src\media\Logo\Red-Ruby-IT-Spin-Transparent.gif" />
+    <Content Include="Angular-src\media\Logo\TennoDex.png" />
+    <Content Include="Angular-src\media\scary.ttf" />
+    <Content Include="Angular-src\media\templogo.png" />
+    <Content Include="Angular-src\media\templogo2.png" />
+    <Content Include="Angular-src\README.txt" />
+    <Content Include="Angular-src\views\404.css" />
+    <Content Include="Angular-src\views\404.tmpl.html" />
+    <Content Include="assets\icons\win\favicon.ico" />
+    <Content Include="Commands.txt" />
+    <Content Include="index.html" />
+    <Content Include="lib\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="lib\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="LICENSE.md" />
+    <Content Include="package.json" />
+    <Content Include="PostInstall.txt" />
+    <Content Include="PreInstall.txt" />
+    <Content Include="README.md" />
+    <Content Include="Warframe Alert App %28builder%29 --prefered.iss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Angular-src\" />
+    <Folder Include="Angular-src\assets\" />
+    <Folder Include="Angular-src\assets\css\" />
+    <Folder Include="Angular-src\assets\fonts\" />
+    <Folder Include="Angular-src\assets\js\" />
+    <Folder Include="Angular-src\assets\js\ie\" />
+    <Folder Include="Angular-src\assets\sass\" />
+    <Folder Include="Angular-src\assets\sass\base\" />
+    <Folder Include="Angular-src\assets\sass\components\" />
+    <Folder Include="Angular-src\assets\sass\layout\" />
+    <Folder Include="Angular-src\assets\sass\libs\" />
+    <Folder Include="Angular-src\components\" />
+    <Folder Include="Angular-src\components\Alert\" />
+    <Folder Include="Angular-src\components\Home\" />
+    <Folder Include="Angular-src\components\Home\controllers\" />
+    <Folder Include="Angular-src\components\Home\templates\" />
+    <Folder Include="Angular-src\components\Menu\" />
+    <Folder Include="Angular-src\components\Menu\controllers\" />
+    <Folder Include="Angular-src\components\Menu\templates\" />
+    <Folder Include="Angular-src\lib\" />
+    <Folder Include="Angular-src\lib\bootstrap\" />
+    <Folder Include="Angular-src\lib\bootstrap\css\" />
+    <Folder Include="Angular-src\media\" />
+    <Folder Include="Angular-src\media\Images\" />
+    <Folder Include="Angular-src\media\Images\404\" />
+    <Folder Include="Angular-src\media\Images\Warframe\" />
+    <Folder Include="Angular-src\media\Images\Warframe\Dark\" />
+    <Folder Include="Angular-src\media\Loading\" />
+    <Folder Include="Angular-src\media\Loading\Ring\" />
+    <Folder Include="Angular-src\media\Logo\" />
+    <Folder Include="Angular-src\shared\" />
+    <Folder Include="Angular-src\shared\service\" />
+    <Folder Include="Angular-src\shared\service\Warframe\" />
+    <Folder Include="Angular-src\views\" />
+    <Folder Include="assets\" />
+    <Folder Include="assets\icons\" />
+    <Folder Include="assets\icons\win\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\bootstrap\" />
+    <Folder Include="lib\bootstrap\css\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\electron-builder\" />
+    <Folder Include="typings\globals\electron-packager\" />
+    <Folder Include="typings\globals\electron\" />
+    <Folder Include="typings\globals\node\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\electron-builder\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\electron-packager\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\electron\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>

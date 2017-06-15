@@ -1,0 +1,2 @@
+C:\Development\Projects\TennoDex\TennoDex.Electron.Alerts\obj\Debug\TennoDex.Electron.Alerts.njsprojResolveAssemblyReference.cache
+C:\Development\Projects\TennoDex\TennoDex.Electron.Alerts\bin\Microsoft.NodejsTools.WebRole.dll
